@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import { Searchbar } from './SearchBar/SearchBar'
-import {ImageGallery} from './ImageGallery/ImageGallery'
+import { ImageGallery } from './ImageGallery/ImageGallery'
 
 export class App extends Component {
     state = {
