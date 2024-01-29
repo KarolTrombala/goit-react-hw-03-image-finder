@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { SearchBar } from './SearchBar/SearchBar'
+import { Searchbar } from './SearchBar/SearchBar'
 import {ImageGallery} from './ImageGallery/ImageGallery'
 
 export class App extends Component {
@@ -16,7 +16,7 @@ export class App extends Component {
 
         return (
             <div>
-                <SearchBar onSubmit={this.handleSearch} />
+                <Searchbar onSubmit={this.handleSearch} />
                 <ImageGallery searchQuery={searchQuery} />
             </div>
         )
