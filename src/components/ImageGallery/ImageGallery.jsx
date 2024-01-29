@@ -5,8 +5,7 @@ import { Button } from './Button/'
 import { ImageGalleryItem } from './ImageGalleryItem/'
 import { Loader } from './Loader/'
 import { Modal } from './Modal/'
-
-import { getImages } from 'services/api'
+import { getImages } from './services/api'
 
 export class ImageGallery extends Component {
     constructor(props) {
@@ -114,7 +113,7 @@ export class ImageGallery extends Component {
 
         return (
             <div>
-                <ul className={styles.gallery} ref={this.listRef}>
+                <ul className={css.gallery} ref={this.listRef}>
                     {images.map(({ id, ...rest }) => (
                         <ImageGalleryItem
                             key={id}
