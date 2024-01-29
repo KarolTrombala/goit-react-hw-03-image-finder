@@ -5,6 +5,7 @@ import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem'
 import { getImages } from 'services/api'
 import { Loader } from 'components/Loader/Loader'
 import { Modal } from 'components/Modal/Modal'
+import { Button } from 'components/Button/Button'
 
 export class ImageGallery extends Component {
     constructor(props) {
