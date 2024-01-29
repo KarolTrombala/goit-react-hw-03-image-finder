@@ -30,7 +30,7 @@ export class ImageGallery extends Component {
         return newScrollPosition
     }
 
-    // obsługa update komponentu - nowe query i nowe page
+    // nowe zapytanie i nowa strona
     componentDidUpdate(prevProps, prevState, snapshot) {
         const { page, images } = this.state
 
@@ -56,7 +56,7 @@ export class ImageGallery extends Component {
         }
     }
 
-    // pobieranie obrazków na nowe query
+    // pobieranie obrazków do nowego zapytania
     async fetchImages(query, page) {
         this.setState({ isLoading: true, scrollPosition: 0 })
         try {
@@ -75,7 +75,7 @@ export class ImageGallery extends Component {
         }
     }
 
-    // pobieranie obrazków na nowe page
+    // pobieranie obrazków na nową stronę
     async loadMoreImages(query, page) {
         this.setState({ isLoading: true })
 
@@ -92,7 +92,7 @@ export class ImageGallery extends Component {
         }
     }
 
-    // button handler - page + 1
+    // obsługa buttona
     handleLoadMore = () => {
         this.setState((prevState) => ({ page: prevState.page + 1 }))
     }
