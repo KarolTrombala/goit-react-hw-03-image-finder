@@ -1,7 +1,22 @@
-import { Component } from 'react'
 import css from './SearchBar.module.css'
 import PropTypes from 'prop-types'
 
+
+export const Searchbar = ({ onSubmit }) => {
+    const handleSubmit = (query) => {
+        onSubmit(query)
+    }
+
+    return (
+        <header className={styles.searchbar}>
+            <SearchForm onSubmit={handleSubmit} />
+        </header>
+    )
+}
+
+Searchbar.propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+}
 
 export const SearchForm = ({ onSubmit }) => {
     const handleSubmit = (e) => {
@@ -13,7 +28,7 @@ export const SearchForm = ({ onSubmit }) => {
     return (
         <form className={css.searchform} onSubmit={handleSubmit}>
             <button type="submit" className={css.searchform__button}>
-                <span className={css.searchform__button-label}>Search</span>
+                <span className={css.searchform__label}>Search</span>
             </button>
 
             <input
@@ -26,7 +41,7 @@ export const SearchForm = ({ onSubmit }) => {
             />
         </form>
     )
-}
+};
 
 SearchForm.propTypes = {
     onSubmit: PropTypes.func.isRequired,
