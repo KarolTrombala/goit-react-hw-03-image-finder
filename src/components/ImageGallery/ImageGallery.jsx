@@ -1,9 +1,9 @@
 import { Component, createRef } from 'react'
 import css from './ImageGallery.module.css'
 import PropTypes from 'prop-types'
-import { Button } from './Button/'
+import { Button } from './Button/Button'
 import { ImageGalleryItem } from './ImageGalleryItem/ImageGalleryItem'
-import { Loader } from './Loader/'
+import { Loader } from './Loader/Loader'
 import { Modal } from './Modal/'
 import { getImages } from './services/api'
 
