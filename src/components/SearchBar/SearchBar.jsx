@@ -1,7 +1,7 @@
 import css from './SearchBar.module.css'
 import PropTypes from 'prop-types'
 
-import { SearchForm } from './SearchForm/SearchForm'
+import { SearchForm } from 'components/SearchForm/SearchForm'
 
 export const Searchbar = ({ onSubmit }) => {
     const handleSubmit = (query) => {

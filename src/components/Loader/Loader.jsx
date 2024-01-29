@@ -1,5 +1,5 @@
-import { ThreeDots } from 'react-loader-spinner'
-import { Container } from './Container/Container'
+import {ThreeDots} from 'react'
+import { Container } from 'components/Container/Container'
 
 export const Loader = () => {
     return (

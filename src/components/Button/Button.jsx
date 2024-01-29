@@ -1,7 +1,7 @@
 import css from './Button.module.css'
 import PropTypes from 'prop-types'
 
-import { Container } from './Container/Container'
+import { Container } from 'components/Container/Container'
 
 export const Button = ({ onClick, children }) => {
     return (

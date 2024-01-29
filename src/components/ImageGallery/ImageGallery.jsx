@@ -1,11 +1,10 @@
 import { Component, createRef } from 'react'
 import css from './ImageGallery.module.css'
 import PropTypes from 'prop-types'
-import { Button } from './Button/Button'
-import { ImageGalleryItem } from './ImageGalleryItem/ImageGalleryItem'
-import { Loader } from './Loader/Loader'
-import { Modal } from './Modal/'
-import { getImages } from './services/api'
+import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem'
+import { getImages } from 'services/api'
+import { Loader } from 'components/Loader/Loader'
+import { Modal } from 'components/Modal/Modal'
 
 export class ImageGallery extends Component {
     constructor(props) {
